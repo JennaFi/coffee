@@ -1,0 +1,39 @@
+{% extends "shop/base.html" %}
+{% load static %}
+
+{% block title %}
+  Coffee
+{% endblock %}
+
+
+
+
+{% block content %}
+<div class="container-fluid padding">
+  <div class="row padding">
+  {% for t in coffee %}
+
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card" style="background-color: transparent">
+          <div class="coffee"{{ coffee.get_absolute_url }}><img src="{{ t.image.url }}" class="card-img-top" style="width:200px;"></div>
+          <div class="card-body" style="background-color: transparent">
+            <h4 class="card-title">
+             <div class="name"{{ coffee.get_absolute_url }}>{{ t.name }}</div>
+            </h4>
+              <h4><p class="price">${{ t.price }}</p></h4>
+            <p class="card-text">{{ t.description }}</p>
+          </div>
+        </div>
+        <br>
+
+        <br>
+      </div>
+    <br>
+    <br>
+  {% endfor %}
+  </div>
+<br>
+</div>
+{% endblock %}
+
+

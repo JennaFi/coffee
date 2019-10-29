@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+
+.navbar-brand img {
+	    margin: 0 auto;
+}
+.navbar-brand img {
+         position: left;
+         width: 50px;
+}
+.navbar-nav li {
+        padding-right: 20px;
+}
+.nav-link {font-size: 1.5em !important
+         color: #390101;
+}
+
+.nav-link:hover {
+         color: #B32F50;
+}
+
+.collapse.in {
+          display: block;
+}
+.carousel-inner {
+          height: 500px;
+}
+@media (min-width: 800px){
+         .carousel-inner img {
+         width: 100%;
+}
+}
+.carousel-caption {
+        text-center;
+        position: absolute;
+        top: 20%;
+        bottom: initial;
+        transform: translateY (-50%);
+        text-shadow: 1px 1px 10px #000;
+}
+
+.carousel-inner img {
+        width: 800px;
+        transform: translateY (-800%);
+
+}
+
+@media (max-width: 550px) {
+         .carousel-caption .display-2 {
+         font-size: 3em;
+            }
+}
+#card {
+        padding: 0px 15px;
+        border-radius: 0;
+        width: 70%;
+        margin: 0px 0px 30px;
+        margin-top: 20px;
+
+}
+
+#row padding {
+          padding: 0px 15px;
+          border-radius: 1;
+          width: 70%;
+          margin: 0px 0px 30px;
+          margin-top: 20px;
+}
+
+html {
+       background: url('/static/img/paper.png') repeat-y center center;
+
+}
+
+
+body {
+    background: url('/static/img/paper.png') repeat-y center center;
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif; color: #390101;
+
+}
+
+
+h1, h2, h3, h4, h5 , h6 {
+    font-family: 'Poppins', sans-serif; font-weight:bold; color: #E9CBAB;
+}
+
+
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover , h6:hover {
+     color: #AD7E4C;
+}
+
+.price  {
+   color: #B32F50;
+   }
+
+.name   {
+    color: #390101;
+    }
+
+a {
+    text-decoration:bold;
+    color:#390101;
+}
+
+a:hover {
+    color: #B32F50;
+}
+
+
+.text-left {
+    text-align:left;
+}
+
+.text-right {
+    text-align:right;
+}
+
+
+
+#main {
+    float:left;
+    width: 96%;
+    margin-right:-220px;
+    overflow:hidden;
+}
+
+.product-list .item {
+    width: 100%;
+    padding:5px 10px 5px 0;
+    float:left;
+    text-align:center;
+    line-height:1.2;
+}
+
+.portfolio-item {
+     margin-bottom: 30px;
+     margin: 0px 0px 30px;
+     padding: 0px 15px;
+}
+
+
+.card-body {
+        background-color: transparent;
+        }
+
+.social a {
+        font-size: 2em;
+        padding: 10px;
+        }
+
+.fa-facebook {
+        color: #3b5998;
+         }
+.fa-instagram {
+        color: #517fa4;
+        }
+
+.fa-youtube {
+        color: #bb0000;
+        }
+.fa-twitter {
+        color: #00aced;
+        }
+
+.fa-facebook:hover, .fa-instagram:hover, .fa-youtube:hover,
+ .fa-twitter:hover {
+        color: #ccc;
+        }
+
+footer {
+        background-color: #9d5252;
+        padding-top: 30px;
+        border-top: 4px ;
+        color: #E9CBAB;
+        }

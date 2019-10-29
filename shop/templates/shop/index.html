@@ -1,0 +1,74 @@
+{% extends "shop/base.html" %}
+{% load static %}
+{% block title %}
+Coffeeshop in Sicily
+
+{% endblock %}
+
+<title>Coffeeshop in Sicily</title>
+
+
+{% block slider %}
+<header>
+ <div class="carousel slide carousel-fade" data-ride="carousel" id="slides">
+    <ul class="carousel-indicators">
+      <li data-target="#slides" data-slide-to="0" class="active"></li>
+      <li data-target="#slides" data-slide-to="1"></li>
+      <li data-target="#slides" data-slide-to="2"></li>
+      <li data-target="#slides" data-slide-to="3"></li>
+      <li data-target="#slides" data-slide-to="4"></li>
+    </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active text-center">
+        <img src="/static/img/coffee_4.jpg" alt="slide one">
+      </div>
+      <div class="carousel-item text-center">
+        <img src="/static/img/tee-24.jpg" alt="slide two">
+      </div>
+      <div class="carousel-item text-center">
+        <img src="/static/img/coffee-1869647_1920.jpg" alt="slide three">
+      </div>
+      <div class="carousel-item text-center">
+        <img src="/static/img/tea_1.jpg" alt="slide four">
+      </div>
+      <div class="carousel-item text-center">
+        <img src="/static/img/coffee-3975317_1920.jpg" alt="slide five">
+      </div>
+    </div>
+  </div>
+
+</header>
+{% endblock %}
+
+
+
+  {% block content %}
+<div class="container">
+  <div class="row padding">
+  {% for t in tea %}
+    <div class="col-md-3 ">
+
+      <div class="tea"{{ tea.get_absolute_url }}><img src="{{ t.image.url }}" class="card-img-top" style="width:200px; height: 165px;"></div>
+        <h5 class="card-title">
+        <h5><p class="name">{{ tea.get_absolute_url }}{{ t.name }}</p></h5>
+        </h5>
+        <h5><p class="price">${{ t.price }}</p></h5>
+    </div>
+  {% endfor %}
+  {% for t in coffee %}
+
+    <div class="col-md-3 ">
+
+      <div class="coffee"{{ coffee.get_absolute_url }}><img src="{{ t.image.url }}" class="card-img-top" style="width:200px; height: 165px;"></div>
+
+        <h5 class="card-title">
+        <h5><p class="name">{{ coffee.get_absolute_url }}{{ t.name }}<p/></h5>
+        </h5>
+        <h5><p class="price">${{ t.price }}</p></h5>
+
+    </div>
+  {% endfor %}
+
+  {% endblock %}
+  </div>
+</div>
